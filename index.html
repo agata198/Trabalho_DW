@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Finanças</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h1>App de finanças!</h1>
+    <form id="formcadastro">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" required>
+        <br>
+        <label for="Quantia" >
+            Quantia:
+        </label>
+        <input type="number" id="Quantia" required>
+        <br>
+        <select id="Tipo">
+            <option value="Receita">Receita</option>
+            <option value="Despesa">Despesa</option>
+        </select>
+        <br>
+        <input type="date" id="Data">
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <h2>Lista de finanças</h2>
+    <button id="Atualizar">Atualizar</button>
+    <ul id="output"></ul>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
